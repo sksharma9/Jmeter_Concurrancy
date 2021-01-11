@@ -29,7 +29,7 @@ public class UserController {
 	//@Autowired
 	@Getter
 	@Setter
-	private UserRepository userRepository = new UserRepositoryImpl();
+	private UserRepository userRepository;
 
 	@RequestMapping(value = "/updateCount", method = RequestMethod.PUT)
 	public @ResponseBody UserResponseDTO updateCount(@RequestParam("id") int id) {
