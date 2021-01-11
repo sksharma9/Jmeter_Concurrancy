@@ -26,7 +26,7 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 public class UserController {
 
-	//@Autowired
+	@Autowired
 	@Getter
 	@Setter
 	private UserRepository userRepository;
